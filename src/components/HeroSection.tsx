@@ -2,15 +2,18 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section id="home" className="min-h-screen pt-16 relative overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: "url('/lovable-uploads/af0c2148-1349-4969-9da8-49ee6d3e9ff8.png')",
-          backgroundSize: '100% 100%',
+          backgroundSize: isMobile ? 'cover' : '100% 100%',
           transform: 'scaleX(-1)',
           imageRendering: '-webkit-optimize-contrast',
           backfaceVisibility: 'hidden',
