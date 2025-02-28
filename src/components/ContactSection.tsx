@@ -1,3 +1,4 @@
+
 import React from "react";
 import { MessageCircle } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
@@ -23,7 +24,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <h2 className="text-[32px] max-w-md mb-4 md:mb-0">
-            Entre em contato e melhore seus resultados
+            Entre em contato e melhore seus <span className="font-playfair italic">resultados</span>
           </h2>
           <p className="text-white/80 max-w-md">
             Entre em contato conosco para uma consulta gratuita e transforme sua empresa e suas vendas em mais uma história de sucesso na Lumuz.
