@@ -1,3 +1,4 @@
+
 import React from "react";
 import { MessageCircle, DollarSign } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -64,7 +65,7 @@ const AboutSection = () => {
             </div>
             <a 
               href="#contato"
-              className="block text-center bg-black border border-transparent rounded-lg py-4 px-6 text-white hover:bg-white/10 transition-colors relative"
+              className="block text-center bg-black border border-transparent rounded-lg py-4 px-6 text-white hover:bg-white/10 transition-colors relative mt-4"
               style={{
                 background: 'linear-gradient(black, black) padding-box, linear-gradient(90deg, #00C2FF, #A438FF, #FF8A76) border-box',
                 borderWidth: '1px',
